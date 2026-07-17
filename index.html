@@ -105,7 +105,52 @@
       </div>
     </form>
   </section>
+   <!-- ============ PREVIEW SIDE ============ -->
+  <section class="preview-pane" aria-label="Resume live preview">
+    <div class="preview-pane__toolbar">
+      <span class="preview-pane__tab">Document Preview</span>
+      <span class="preview-pane__hint">Updates as you type</span>
     </div>
+ 
+    <div class="paper-wrap">
+      <svg class="paperclip" viewBox="0 0 40 90" aria-hidden="true">
+        <path d="M20 6 C10 6 3 13 3 23 L3 68 C3 78 11 85 21 85 C31 85 38 78 38 68 L38 27 C38 25 36 23 34 23 C32 23 30 25 30 27 L30 66 C30 71 26 75 21 75 C16 75 12 71 12 66 L12 25 C12 17 18 11 26 11 C34 11 40 17 40 25"
+          fill="none" stroke="#9a9484" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+ 
+      <article id="resume" class="resume">
+ 
+        <header class="resume__header">
+          <h2 class="resume__name" id="pName">Your Name</h2>
+          <p class="resume__contact" id="pContact">email · phone · location</p>
+        </header>
+ 
+        <section class="resume__section" id="pSummarySection" hidden>
+          <h3 class="resume__heading">Profile</h3>
+          <p class="resume__summary" id="pSummary"></p>
+        </section>
+ 
+        <section class="resume__section" id="pSkillsSection" hidden>
+          <h3 class="resume__heading">Skills</h3>
+          <div class="resume__skills" id="pSkills"></div>
+        </section>
+ 
+        <section class="resume__section" id="pExperienceSection" hidden>
+          <h3 class="resume__heading">Experience</h3>
+          <div id="pExperience"></div>
+        </section>
+ 
+        <section class="resume__section" id="pEducationSection" hidden>
+          <h3 class="resume__heading">Education</h3>
+          <div id="pEducation"></div>
+        </section>
+ 
+        <p class="resume__placeholder" id="pPlaceholder">Start typing on the left — your resume will appear here, section by section.</p>
+      </article>
+    </div>
+  </section>
+ </div>
+
 
     <script src="script.js"></script>
   </body>
