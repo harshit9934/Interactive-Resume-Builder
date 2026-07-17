@@ -18,30 +18,55 @@
   <body>
     <div class="app">
       <!-- Resume Builder Content Will Be Added Here -->
-         <!-- ============ FORM SIDE ============ -->
-  <section class="intake" aria-label="Resume information form">
- 
-    <header class="intake__header">
-      <div class="intake__title-block">
-        <p class="eyebrow">Case File &middot; Personnel Record</p>
-        <h1 class="intake__title">Build Your Resume</h1>
-        <p class="intake__subtitle">Fill in the form below — your document takes shape on the right, in real time.</p>
-      </div>
- 
-      <!-- Signature element: ink-seal completion dial -->
-      <div class="seal" id="seal" aria-hidden="false" role="img" aria-label="Form completion status">
-        <svg viewBox="0 0 120 120" class="seal__ring">
-          <circle class="seal__track" cx="60" cy="60" r="52"></circle>
-          <circle class="seal__progress" id="sealProgress" cx="60" cy="60" r="52"></circle>
-        </svg>
-        <div class="seal__center">
-          <span class="seal__percent" id="sealPercent">0%</span>
-          <span class="seal__label" id="sealLabel">DRAFT</span>
+       
+      <!-- ============ FORM SIDE ============ -->
+       <section class="intake" aria-label="Resume information form">
+        <header class="intake__header">
+          <div class="intake__title-block">
+            <p class="eyebrow">Case File &middot; Personnel Record</p>
+            <h1 class="intake__title">Build Your Resume</h1>
+            <p class="intake__subtitle">Fill in the form below — your document takes shape on the right, in real time.</p>
+          </div>
+        </header>
+        <!-- Signature element: ink-seal completion dial -->
+         <div class="seal" id="seal" aria-hidden="false" role="img" aria-label="Form completion status">
+          <svg viewBox="0 0 120 120" class="seal__ring">
+            <circle class="seal__track" cx="60" cy="60" r="52"></circle>
+            <circle class="seal__progress" id="sealProgress" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="seal__center">
+            <span class="seal__percent" id="sealPercent">0%</span>
+            <span class="seal__label" id="sealLabel">DRAFT</span>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      
+      <form id="resumeForm" novalidate>
+          <!-- Personal details -->
+      <fieldset class="field-group">
+        <legend>01 — Identity</legend>
  
-    <form id="resumeForm" novalidate>
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Jordan Alvarez" autocomplete="name">
+        </div>
+ 
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jordan@example.com" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 019-2233" autocomplete="tel">
+          </div>
+        </div>
+ 
+        <div class="field">
+          <label for="location">Location <span class="optional">(optional)</span></label>
+          <input type="text" id="location" name="location" placeholder="Austin, TX">
+        </div>
+      </fieldset>    
     </div>
 
     <script src="script.js"></script>
