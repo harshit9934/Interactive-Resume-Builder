@@ -151,7 +151,50 @@
   </section>
  </div>
 
-
-    <script src="script.js"></script>
-  </body>
+ <!-- Hidden templates for dynamically-added rows -->
+<template id="educationRowTemplate">
+  <div class="repeat-row" data-row>
+    <button type="button" class="repeat-row__remove" data-remove aria-label="Remove this education entry">&times;</button>
+    <div class="field">
+      <label>School / Institution</label>
+      <input type="text" data-field="school" placeholder="Rice University">
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>Degree</label>
+        <input type="text" data-field="degree" placeholder="B.S. Computer Science">
+      </div>
+      <div class="field">
+        <label>Years</label>
+        <input type="text" data-field="years" placeholder="2019 – 2023">
+      </div>
+    </div>
+  </div>
+</template>
+ 
+<template id="experienceRowTemplate">
+  <div class="repeat-row" data-row>
+    <button type="button" class="repeat-row__remove" data-remove aria-label="Remove this experience entry">&times;</button>
+    <div class="field-row">
+      <div class="field">
+        <label>Company</label>
+        <input type="text" data-field="company" placeholder="Fielder & Co.">
+      </div>
+      <div class="field">
+        <label>Role</label>
+        <input type="text" data-field="role" placeholder="Product Designer">
+      </div>
+    </div>
+    <div class="field">
+      <label>Duration</label>
+      <input type="text" data-field="duration" placeholder="Jan 2022 – Present">
+    </div>
+    <div class="field">
+      <label>Description</label>
+      <textarea rows="3" data-field="description" placeholder="What did you do? What changed because of it?"></textarea>
+    </div>
+  </div>
+</template>
+<script src="script.js"></script>
+</body>
 </html>
