@@ -18,6 +18,30 @@
   <body>
     <div class="app">
       <!-- Resume Builder Content Will Be Added Here -->
+         <!-- ============ FORM SIDE ============ -->
+  <section class="intake" aria-label="Resume information form">
+ 
+    <header class="intake__header">
+      <div class="intake__title-block">
+        <p class="eyebrow">Case File &middot; Personnel Record</p>
+        <h1 class="intake__title">Build Your Resume</h1>
+        <p class="intake__subtitle">Fill in the form below — your document takes shape on the right, in real time.</p>
+      </div>
+ 
+      <!-- Signature element: ink-seal completion dial -->
+      <div class="seal" id="seal" aria-hidden="false" role="img" aria-label="Form completion status">
+        <svg viewBox="0 0 120 120" class="seal__ring">
+          <circle class="seal__track" cx="60" cy="60" r="52"></circle>
+          <circle class="seal__progress" id="sealProgress" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="seal__center">
+          <span class="seal__percent" id="sealPercent">0%</span>
+          <span class="seal__label" id="sealLabel">DRAFT</span>
+        </div>
+      </div>
+    </header>
+ 
+    <form id="resumeForm" novalidate>
     </div>
 
     <script src="script.js"></script>
