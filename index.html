@@ -83,7 +83,28 @@
           <input type="text" id="skillInput" placeholder="e.g. Python, Figma, Public Speaking">
           <div class="tag-list" id="tagList" aria-live="polite"></div>
         </div>
-      </fieldset>    
+      </fieldset>
+      
+        <!-- Education -->
+      <fieldset class="field-group">
+        <legend>04 — Education</legend>
+        <div id="educationList" class="repeat-list"></div>
+        <button type="button" class="btn btn--ghost" id="addEducation">+ Add education</button>
+      </fieldset>
+ 
+      <!-- Experience -->
+      <fieldset class="field-group">
+        <legend>05 — Experience</legend>
+        <div id="experienceList" class="repeat-list"></div>
+        <button type="button" class="btn btn--ghost" id="addExperience">+ Add experience</button>
+      </fieldset>
+ 
+      <div class="action-row">
+        <button type="button" class="btn btn--primary" id="downloadPdf">Download as PDF</button>
+        <button type="button" class="btn btn--danger" id="clearForm">Clear form</button>
+      </div>
+    </form>
+  </section>
     </div>
 
     <script src="script.js"></script>
